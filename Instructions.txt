@@ -1,0 +1,13 @@
+This file lists the instructions I followed while watching the tutorials.
+
+Tutorial_0
+=============
+1. Created virtual environment using below command 
+
+        python3 -m venv .venv 
+
+2. pip install PyQt5
+
+3. Create requirements file using below command 
+    
+        pip freeze > requirements.txt 
