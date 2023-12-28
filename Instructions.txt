@@ -11,3 +11,8 @@ Tutorial_0
 3. Create requirements file using below command 
     
         pip freeze > requirements.txt 
+
+
+============================================================
+Tutorial_1: How to create View , Scene and Grid Background
+============================================================
