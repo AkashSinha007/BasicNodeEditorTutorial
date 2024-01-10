@@ -36,7 +36,7 @@ class QDMGraphicsNode(QGraphicsItem):
         self.title = self.node.title;
 
         # init sockets
-
+        self.initSockets()
 
         # init content
         self.initContent()
@@ -57,8 +57,8 @@ class QDMGraphicsNode(QGraphicsItem):
         return QRectF(
             0,
             0,
-            2*self.edge_size + self.width ,
-            2 * self.edge_size + self.height
+            self.width,
+            self.height
         ).normalized();
 
     def initUI(self):
@@ -82,6 +82,10 @@ class QDMGraphicsNode(QGraphicsItem):
         self.content.setGeometry(self.edge_size, self.title_height + self.edge_size,
                                  self.width - 2*self.edge_size, self.height - 2*self.edge_size-self.title_height);
         self.grContent.setWidget(self.content);
+
+
+    def initSockets(self):
+        pass
 
 
     def paint(self, painter: QPainter | None, option: QStyleOptionGraphicsItem | None, widget: QWidget | None = ...) -> None:
